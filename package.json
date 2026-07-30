@@ -5,8 +5,8 @@
   "main": "./eng/update-readme.js",
   "private": true,
   "scripts": {
-    "start": "npm run build",
-    "build": "node ./eng/update-readme.mjs && node ./eng/generate-marketplace.mjs",
+    "start": "node api.js && npm run build",
+    "build": "node api.js && node ./eng/update-readme.mjs && node ./eng/generate-marketplace.mjs",
     "contributors:add": "all-contributors add",
     "contributors:report": "node ./eng/contributor-report.mjs",
     "contributors:generate": "all-contributors generate",
